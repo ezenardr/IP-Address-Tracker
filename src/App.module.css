@@ -1,0 +1,123 @@
+header {
+    background-image: url('../images/pattern-bg-desktop.png');
+    text-align: center;
+    padding: 2rem;
+    padding-bottom: 6rem;
+    position: relative;
+}
+.title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
+    margin-top: 2rem;
+    width: 40rem;
+}
+input {
+    padding: 2rem;
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+    width: 100%;
+    border: none;
+    font-size: 1.6rem;
+}
+input:focus {
+    outline: none;
+}
+.icon {
+    background: #000;
+    color: #fff;
+    height: 5.9rem;
+    width: 4rem;
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    cursor: pointer;
+}
+.icon:hover {
+    background: var(--veryDarkGray);
+}
+
+.data {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    background: #fff;
+    padding: 3rem;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 1.2rem;
+    position: absolute;
+    z-index: 9999999;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.24);
+}
+.dataBox {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5em;
+}
+.dataBoxTitle {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--darkGray);
+}
+.dataData {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--veryDarkGray);
+    text-align: start;
+}
+.borderRight {
+    border-right: 1px solid #ddd;
+}
+
+.mapContainer {
+    width: 100%;
+}
+
+@media (max-width: 960px) {
+    header {
+        padding-bottom: 13rem;
+    }
+
+    .data {
+        grid-template-columns: 1fr;
+        bottom: -60%;
+        gap: 1rem;
+    }
+    .dataBox {
+        align-items: center;
+    }
+    .dataData {
+        text-align: center;
+    }
+    .borderRight {
+        border-right: none;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 35rem;
+    }
+    .data {
+        bottom: -65%;
+        gap: 0;
+    }
+    .dataData {
+        text-align: center;
+    }
+}

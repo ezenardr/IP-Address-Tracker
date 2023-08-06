@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --veryDarkGray: hsl(0, 0%, 17%);
+    --darkGray: hsl(0, 0%, 59%);
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
