@@ -57,7 +57,7 @@ export default function App() {
           <input
             type="text"
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search for any IP address or domain"
+            placeholder="Search for any IP address"
             value={query}
           />
           <IoIosArrowForward onClick={submitHandler} className={Styles.icon} />
